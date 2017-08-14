@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        //美化导航条--这里是全局设置
+        UINavigationBar.appearance().barTintColor = UIColor(red: 242/255, green: 116/255, blue: 119/255, alpha: 1) //设置前景色
+        UINavigationBar.appearance().tintColor = UIColor.white
+        //设置字体
+        if let barFont = UIFont(name: "Avenir-Light", size: 24){
+            UINavigationBar.appearance().titleTextAttributes = [
+                NSFontAttributeName: barFont,
+                NSForegroundColorAttributeName:UIColor.white,
+                
+            ]
+        }
+        //更改底部导航条的颜色
+      //  UITabBar.appearance().tintColor = UIColor(red: 242/255, green: 116/255, blue: 119/255, alpha: 1)
+        UITabBar.appearance().selectionIndicatorImage = #imageLiteral(resourceName: "tabitem-selected")
+        UITabBar.appearance().tintColor = UIColor.white
+        //添加授权，在leancloud相应APP设置里面可以找到
+        AVOSCloud.setApplicationId("IM9MuQwLmrAOvVC5Sz9YIxW7-gzGzoHsz", clientKey: "YtjByhkxKnJYSB9SMa9Ow51g")
+               return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -40,6 +58,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    //若果建立工程的时候没有勾选COREDATA的话可以新建一个项目勾选COREDATA然后拷贝过来，
+    lazy var persistentContainer: NSPersistentContainer = {
+        /*
+         The persistent container for the application. This implementation
+         creates and returns a container, having loaded the store for the
+         application to it. This property is optional since there are legitimate
+         error conditions that could cause the creation of the store to fail.
+         */
+        let container = NSPersistentContainer(name: "FanArea")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                
+                /*
+                 Typical reasons for an error here include:
+                 * The parent directory does not exist, cannot be created, or disallows writing.
+                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                 * The device is out of space.
+                 * The store could not be migrated to the current model version.
+                 Check the error message to determine what the actual problem was.
+                 */
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+    
+    // MARK: - Core Data Saving support
+    
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+                print("保存成功")
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+
 
 
 }

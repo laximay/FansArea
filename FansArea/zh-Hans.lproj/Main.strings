@@ -1,0 +1,72 @@
+/* Class = "UILabel"; text = "我来过，评价一下吧"; ObjectID = "1HN-7f-ZRs"; */
+"1HN-7f-ZRs.text" = "我来过，评价一下吧";
+
+/* Class = "UILabel"; text = "Switf3.1语法适配,超人一步"; ObjectID = "DSo-H6-y0a"; */
+"DSo-H6-y0a.text" = "Switf3.1语法适配,超人一步";
+
+/* Class = "UIButton"; normalTitle = "否"; ObjectID = "EpF-md-aDj"; */
+"EpF-md-aDj.normalTitle" = "否";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FFr-jg-4ps"; */
+"FFr-jg-4ps.text" = "Label";
+
+/* Class = "UILabel"; text = "地名"; ObjectID = "JNw-Jz-gnh"; */
+"JNw-Jz-gnh.text" = "地名";
+
+/* Class = "UIButton"; normalTitle = "是"; ObjectID = "KJU-Ww-nos"; */
+"KJU-Ww-nos.normalTitle" = "是";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "NYv-Ci-JCq"; */
+"NYv-Ci-JCq.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "输入省份"; ObjectID = "Qb5-9t-fet"; */
+"Qb5-9t-fet.placeholder" = "输入省份";
+
+/* Class = "UITabBarItem"; title = "喜欢"; ObjectID = "RDh-aF-chq"; */
+"RDh-aF-chq.title" = "喜欢";
+
+/* Class = "UINavigationItem"; title = "各大镇区"; ObjectID = "RoK-vB-hHU"; */
+"RoK-vB-hHU.title" = "各大镇区";
+
+/* Class = "UILabel"; text = "我来过"; ObjectID = "UzN-zR-JzK"; */
+"UzN-zR-JzK.text" = "我来过";
+
+/* Class = "UITextField"; placeholder = "输入地名"; ObjectID = "baU-fy-tKl"; */
+"baU-fy-tKl.placeholder" = "输入地名";
+
+/* Class = "UILabel"; text = "地区"; ObjectID = "dSP-6U-ST3"; */
+"dSP-6U-ST3.text" = "地区";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dUG-w2-9FJ"; */
+"dUG-w2-9FJ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dxy-A1-UXR"; */
+"dxy-A1-UXR.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ed7-NF-Hcu"; */
+"ed7-NF-Hcu.text" = "Label";
+
+/* Class = "UILabel"; text = "省份"; ObjectID = "fH6-Zd-QZn"; */
+"fH6-Zd-QZn.text" = "省份";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hHO-bh-9et"; */
+"hHO-bh-9et.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "新增"; ObjectID = "hge-uq-5s1"; */
+"hge-uq-5s1.title" = "新增";
+
+/* Class = "UILabel"; text = "Swift3"; ObjectID = "ipV-eV-nha"; */
+"ipV-eV-nha.text" = "Swift3";
+
+/* Class = "UITextField"; placeholder = "输入地区"; ObjectID = "lmH-mu-jPL"; */
+"lmH-mu-jPL.placeholder" = "输入地区";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oSn-Dd-vNF"; */
+"oSn-Dd-vNF.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "tN8-yd-AwF"; */
+"tN8-yd-AwF.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "立即体验"; ObjectID = "zSX-Bb-Zlq"; */
+"zSX-Bb-Zlq.normalTitle" = "立即体验";
+

@@ -1,0 +1,4 @@
+/* (No Commment) */
+"CFBundleName" = "粉丝区域";
+"NSCameraUsageDescription" = "需要访问摄像头？";
+"NSPhotoLibraryUsageDescription" = "需要访问相册？";
