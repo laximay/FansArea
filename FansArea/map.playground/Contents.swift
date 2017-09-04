@@ -7,7 +7,7 @@ let coder = CLGeocoder()
 
 var placemark : CLPlacemark?
 
-coder.geocodeAddressString("东莞市横沥镇") { (placemarks, error) in
+coder.geocodeAddressString("东莞市横沥镇西城三區") { (placemarks, error) in
     if error != nil {
         print(error ?? "错误")
     }

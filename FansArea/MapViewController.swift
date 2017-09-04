@@ -34,6 +34,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
             
             if let loc = place?.location{
                 annotation.coordinate = loc.coordinate
+                dump("坐標是：\(loc.coordinate)")
                 self.mapView.showAnnotations([annotation], animated: true)
                 self.mapView.selectAnnotation(annotation, animated: true)
             }
